@@ -1,0 +1,327 @@
+# artillery run loadtest.yml
+config:
+    target: "ws://localhost:7274"
+    ensure:
+      maxErrorRate: 1
+    phases:
+      - duration: 60
+        arrivalRate: 30
+        rampTo: 50
+        name: "Max load"
+scenarios:
+  - engine: "ws"
+    flow:
+      - send: ": norm if -1 else 0 then ;"
+      - think: 0.1
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
+      - send: "1 norm 5 + 6 * norm 3 + norm 1 + ."
+      - think: 0.01
