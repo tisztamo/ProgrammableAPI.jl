@@ -1,10 +1,10 @@
-using Documenter, ForthAPI
+using Documenter, ProgrammableAPI
 
 makedocs(
-    modules = [ForthAPI],
+    modules = [ProgrammableAPI],
     format = Documenter.HTML(; prettyurls = get(ENV, "CI", nothing) == "true"),
     authors = "Schäffer Krisztián",
-    sitename = "ForthAPI.jl",
+    sitename = "ProgrammableAPI.jl",
     pages = Any["index.md"]
     # strict = true,
     # clean = true,
@@ -12,6 +12,6 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/tisztamo/ForthAPI.jl.git",
+    repo = "github.com/tisztamo/ProgrammableAPI.jl.git",
     push_preview = true
 )

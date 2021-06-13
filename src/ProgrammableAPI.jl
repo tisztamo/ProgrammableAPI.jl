@@ -1,6 +1,6 @@
 module ProgrammableAPI
 
-export PAPIManager, PAPIInput, PAPIOutput, CreateEngine, EngineCreated
+export PAPIManager, PAPIInput, PAPIOutput, CreateEngine, EngineCreated, WSAPIService
 
 using Circo
 using Plugins
@@ -46,5 +46,7 @@ function Circo.onmessage(me::PAPIManager, msg::CreateEngine, service)
     push!(me.living, addr)
     send(service, me, msg.respondto, EngineCreated(msg.token, addr))
 end
+
+include("wsapi.jl")
 
 end # module

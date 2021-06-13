@@ -1,12 +1,12 @@
-name = "ForthAPI"
+name = "ProgrammableAPI"
 uuid = "b963c118-178a-40f4-9dba-c658ae91ce84"
 authors = ["Schäffer Krisztián <schaffer.krisztian@gmail.com>"]
 version = "0.1.0"
 
 [deps]
+ChainForth = "5e0eca46-5516-4b42-8bdb-e2489174fddb"
 Circo = "36e45090-0d1b-4017-951a-c8c63491b169"
 CircoCore = "b491a1cf-f6eb-411b-8d19-79c73dc191e5"
-Forth = "5e0eca46-5516-4b42-8bdb-e2489174fddb"
 HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
 Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
 Plugins = "231a7ae5-8495-40ed-9891-ff920a14b9bd"

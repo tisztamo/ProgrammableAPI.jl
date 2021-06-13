@@ -1,12 +1,4 @@
-
-export WSAPIService
-
-using Circo
-using Plugins
 using HTTP, Logging
-
-include("ProgrammableAPI.jl")
-using .ProgrammableAPI
 import Sockets
 
 const Token = UInt64

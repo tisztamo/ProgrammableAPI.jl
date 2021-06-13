@@ -29,7 +29,7 @@ version = "0.26.3"
 deps = ["ArgTools", "LibCURL", "NetworkOptions"]
 uuid = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 
-[[ForthAPI]]
+[[ProgrammableAPI]]
 path = "../../.."
 uuid = "b963c118-178a-40f4-9dba-c658ae91ce84"
 version = "0.1.0"
