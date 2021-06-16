@@ -50,7 +50,7 @@ Circo.schedule_start(wsapi::WSAPIServiceImpl, scheduler::AbstractScheduler{TMsg}
                     @debug "Programmable API got WS connection", ws
                     handle_connection(wsapi, ws, scheduler)
                 catch e
-                    @show e
+                    @info "wsapi: $e"
                 end
             end
         end
@@ -59,7 +59,9 @@ end
 
 function Circo.schedule_stop(wsapi::WSAPIServiceImpl, scheduler)
     for conn in values(wsapi.connections)
-        close(conn.ws)
+        try
+            close(conn.ws)
+        catch e end
     end
     isdefined(wsapi, :socket) && close(wsapi.socket)
 end
