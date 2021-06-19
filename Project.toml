@@ -4,7 +4,6 @@ authors = ["Schäffer Krisztián <schaffer.krisztian@gmail.com>"]
 version = "0.1.0"
 
 [deps]
-ChainForth = "5e0eca46-5516-4b42-8bdb-e2489174fddb"
 Circo = "36e45090-0d1b-4017-951a-c8c63491b169"
 CircoCore = "b491a1cf-f6eb-411b-8d19-79c73dc191e5"
 HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
@@ -13,6 +12,10 @@ Plugins = "231a7ae5-8495-40ed-9891-ff920a14b9bd"
 Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
 
 [compat]
+Circo = "^0"
+CircoCore = "^0"
+HTTP = "^0"
+Plugins = "^0"
 julia = "^1"
 
 [extras]
